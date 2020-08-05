@@ -1,0 +1,357 @@
+.main-footer-top {
+	width: 100%;
+	min-height: 508px;
+	box-sizing: border-box;
+	padding: 80px 375px 40px 375px;
+	@include flex-space-between;
+	background-color: #191919;
+}
+
+.main-footer-logo-lnk {
+	display: flex;
+	justify-content: space-between;
+	width: 177px;
+	height: 56px;
+	text-decoration: none;
+	color: #fff;
+	box-sizing: border-box;
+	margin: 0 0 30px 0;
+
+	&:hover {
+      color: $color-main-menu--hover;
+      transition: .3s;
+      transition-property: all;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+      transition-delay: 0s;
+	}
+    &:active {
+	    color: #fff;
+	}
+}
+
+
+.main-footer-logo {
+	fill: #fff;
+}
+
+.main-footer-logo-lnk:hover .main-footer-logo {
+	fill: $color-main-menu--hover;
+}
+
+
+.main-footer-logo-lnk:active .main-footer-logo {
+	fill: #fff;
+}
+
+.footer-logo-text {
+  font-family: Raleway;
+  font-size: 34px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 56px;
+  letter-spacing: -1.36px;
+  text-align: right;
+}
+
+.main-footer-posts-title,
+.main-footer-twitter-title,
+.main-footer-gallery-title {
+	display: block;
+	width: 100%;
+	margin: 0 0 30px 0;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.main-footer-article-text{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #555555;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 0 19px 0;
+}
+
+.main-footer-article-lnk{
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d1d1d1;
+    position: relative;
+
+        &:after {
+        	display: none;
+        	content: "";
+        	position: absolute;
+        	width: 5px;
+            height: 8px;
+            top: 7px;
+            left: 84px;
+            background: url('../img/arrow-footer.png') center no-repeat;
+
+        }
+
+        &:hover {
+            color: #00bff3;
+            transition: .3s;
+        }
+
+        &:hover:after {
+        	display: block;
+        	transition: .3s;
+        }
+
+        &:hover:active {
+        	display: none;
+        }
+
+        &:active {
+        	color: #d1d1d1; 
+        }
+}
+
+
+.main-footer-article {
+	max-width: 270px;
+}
+
+.main-footer-posts {
+	max-width: 270px;
+	margin-top: 20px;
+	box-sizing: border-box;
+
+}
+
+.post-lnk {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	border-bottom: 2px solid #252525;
+	text-decoration: none;
+	margin-bottom: 20px;
+
+	&:last-of-type {
+		border-bottom: none;
+	}
+}
+
+.post-date {
+		display: block;
+		width: 100%;
+        box-sizing: border-box;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+        text-align: left;
+        color: #363636;
+
+
+}	
+.post-preview {
+		display: block;
+		width: 100%;
+        box-sizing: border-box;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        text-align: left;
+        color: #555555;
+        padding-bottom: 16px;
+	}
+
+.post-lnk:hover .post-date{
+    color: #fff;
+    transition: .3s;
+}
+
+.post-lnk:hover .post-preview{
+    color: #c7b299;
+    transition: .3s;
+}
+
+.post-lnk:active .post-date{
+    color: #363636;
+}
+
+.post-lnk:active .post-preview{
+    color: #555;
+}
+
+.main-footer-twitter {
+	max-width: 270px;
+	margin-top: 20px;
+}
+
+.twitter-article{
+	width: 100%;
+	box-sizing: border-box;
+	border-bottom: 2px solid #252525;
+	margin-bottom: 20px;
+
+}
+
+.twitter-article-text {
+	margin: 0;
+	padding: 0;
+	font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #555555;
+}
+
+.twitter-article-time {
+	display: block;
+	box-sizing: border-box;
+	padding-bottom: 16px;
+  	font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #363636;
+}
+
+.twitter-lnk {
+    text-decoration: none;
+    color: #00bff3;
+
+    &:hover {
+    	color: #959595;
+    	transition: .3s;
+    }
+
+    &:active {
+    	color: #00bff3;
+    }
+}
+
+.main-footer-gallery {
+	max-width: 270px;
+	margin-top: 20px;
+
+	&-figure {
+	width: 100%;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+	}
+}
+
+.footer-figure-item {
+	display: block;
+	margin-bottom: 10px;
+	transition: transform 200ms ease-out;
+
+      &:hover {
+          transform: scale(1.15);
+        
+      }
+}
+
+.main-footer-bottom {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 45px 375px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #111;
+}
+
+.footer-links-text {
+	color: #555;
+	font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: right;
+ 
+}
+
+.main-footer-bottom-links{
+	display: flex;
+}
+
+.footer-bottom-link {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  text-align: right;
+  color: #555;
+  display: block;
+  box-sizing: border-box;
+  padding-right: 10px;
+  border-right: 1px solid #555;
+  margin-right: 10px;
+ 
+  &:nth-child(5) {
+  padding-right: 0;
+  border-right: none;
+  margin-right: 0;
+  }
+
+  &:last-child {
+  	padding-right: 0;
+    border-right: none;
+    margin-right: 0;
+  }
+
+
+  &-brand {
+  	color: #959595;
+  }
+
+  &:hover {
+  	color: #c7b299;
+  	transition: .3s;
+  }
+}

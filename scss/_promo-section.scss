@@ -1,0 +1,50 @@
+.promo{
+	@include flex-center;
+	flex-wrap: wrap;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 76px 0 0 0;
+	background-color: #fbfaf8;
+        margin-bottom: -2px;
+
+	&-title {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-family: 'Raleway';
+        font-size: 30px;
+        font-weight: 600;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #555;
+        margin: 0 0 14px 0;
+        box-sizing: border-box;
+	}
+	&-text {
+		font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75;
+        letter-spacing: normal;
+        text-align: center;
+        color: #8c8c8c;
+        width: 769px;
+        padding: 0;
+        margin: 0 0 36px 0;
+        box-sizing: border-box;
+
+	}
+
+	&-screenshots {
+		width: 1230px;
+		min-height: 482px;
+		background-image: url('../img/browser-center.jpg'),
+		                  url('../img/browser-left.jpg'),
+		                  url('../img/browser-right.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom center, bottom left, bottom right;
+	}
+}
