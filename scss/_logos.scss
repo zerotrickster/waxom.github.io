@@ -1,0 +1,30 @@
+.logos {
+	width: 100%;
+	box-sizing: border-box;
+	@include flex-center-center;
+	padding: 140px;
+	background: center/cover no-repeat #292c31 url("../img/bg-logo-section.jpg");
+
+	&-link {
+		@include flex-center-center;
+		width: 210px;
+		height: 210px;
+		box-sizing: border-box;
+		margin-right: 90px;
+		text-decoration: none;
+		transition: transform 200ms ease-out;
+
+        &:hover {
+            transform: scale(1.2);
+        
+        }
+    
+		&:last-of-type {
+			margin-right: 0;
+	    }
+
+	    &:active .logos-img { 
+	    	filter: brightness(50%);
+	    }
+    }
+}
