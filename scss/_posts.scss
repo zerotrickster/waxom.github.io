@@ -116,6 +116,7 @@
 			border: 2px solid transparent;
 		    margin: 0 9px 0 0;
 		    outline: none;
+		    text-decoration: none;
 
         &:last-of-type {
         	margin: 0 0 0 0;
@@ -196,6 +197,10 @@
             left: 84px;
             background: url('../img/arrow.png') center no-repeat;
 
+        }
+
+        &:hover {
+        	color: #a48d72;
         }
 
         &:hover:after {
