@@ -1,6 +1,7 @@
 @media (max-width: 480px){
 html,
 body {
+	margin: 0;
 	min-width: 360px;
 	max-width: 480px;
 }
@@ -123,6 +124,7 @@ body {
 	@include flex-center-center;
 	flex-wrap: wrap;
 	padding: 40px 0;
+	max-width: 100%;
 
 	&-wrp{
 		margin:0 0 40px 0;
@@ -144,10 +146,12 @@ body {
 
 .projects {
 	padding: 0;
+	max-width: 100%;
 
 	&-title {
 		display: block;
-		width: 100%;
+		min-width: 75%;
+		max-width: 77%;
 		margin-bottom: 15px;
 		text-align: center;
 		font-family: Raleway;
@@ -161,7 +165,8 @@ body {
 	}
 
 	&-text {
-		width: 77%;
+		min-width: 75%;
+		max-width: 77%;;
 		text-align: justify;
 		padding: 0;
 		margin: 0 0 40px 0;
@@ -174,7 +179,7 @@ body {
 
 .project-card {
 	margin: 0 0 30px 0;
-	width: 77%;
+	width: 75%;
 }
 
 .project-card:nth-child(7),
@@ -197,18 +202,21 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	max-width: 100%;
 
 	&-title {
         text-align: center;
         margin: 0 0 25px 0;
-        max-width: 77%;
+        min-width: 75%;
+		max-width: 77%;
 	}
 
 	&-text {
         text-align: justify;
         color: #8c8c8c;
         margin: 0 0 16px 0;
-        width: 77%;
+       	min-width: 75%;
+		max-width: 77%;
 	} 
 
 }
@@ -239,18 +247,24 @@ body {
 	display: none;
 }
 .posts {
+	max-width: 100%;
 	padding: 40px 0 40px 0;
 
 	&-text {
-		width: 77%;
+		min-width: 75%;
+		max-width: 77%;
 		padding: 0;
 		margin: 0 0 0 0;
         text-align: justify;
 	}
+
+	&-title {
+		width: 77%;
+	}
 }
 
 .posts-article {
-	width: 77%;
+	width: 75%;
 	margin: 40px 0 0 0;
 
 	&-img{
@@ -263,17 +277,18 @@ body {
 }
 
 .logos {
+	max-width: 100%;
 	flex-wrap: wrap;
 	padding: 20px 0 20px 0;
 
 	&-link {
 		@include flex-center-center;
-		width: 210px;
-		height: 210px;
-		margin: 20px;
+		width: 70%;
+		height: auto;
+		margin: 30px auto;
     
 		&:last-of-type {
-			margin-right: 20px;
+			margin: 30px auto;
 	    }
     }
 }
@@ -284,6 +299,7 @@ body {
 }
 
 .main-footer-bottom {
+	max-width: 100%;
 	padding: 20px 0;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -291,7 +307,8 @@ body {
 }
 
 .main-footer-bottom-links {
-	width: 100%;
+	max-width: 100%;
+	min-width: 75%;
 	justify-content: center;
 
 	&:first-child {
@@ -304,7 +321,9 @@ body {
 @media (max-width: 360px){
 html,
 body {
+	margin: 0;
 	max-width: 360px;
+	min-width: 320px;
 }
 .main-header {
 	flex-wrap: nowrap;
@@ -422,6 +441,7 @@ body {
 }
 
 .features {
+	max-width: 100%;
 	@include flex-center-center;
 	flex-wrap: wrap;
 	padding: 40px 0;
@@ -445,11 +465,12 @@ body {
 }
 
 .projects {
+	max-width: 100%;
 	padding: 0;
 
 	&-title {
 		display: block;
-		width: 100%;
+		width: 85%;
 		margin-bottom: 15px;
 		text-align: center;
 		font-family: Raleway;
@@ -476,7 +497,7 @@ body {
 
 .project-card {
 	margin: 0 0 30px 0;
-	width: 95%;
+	width: 90%;
 }
 
 .project-card:nth-child(7),
@@ -493,6 +514,7 @@ body {
 }
 
 .mobile {
+	max-width: 100%;
     padding: 40px 0 40px 0;
 	background-position: bottom left 20px;
 	background-size: 50%;
@@ -503,6 +525,7 @@ body {
 	&-title {
         text-align: center;
         margin: 0 0 25px 0;
+        width: 80%;
 	}
 
 	&-text {
@@ -539,6 +562,7 @@ body {
 	display: none;
 }
 .posts {
+	max-width: 100%;
 	padding: 40px 0 40px 0;
 
 	&-text {
@@ -547,10 +571,14 @@ body {
 		margin: 0 0 0 0;
         text-align: justify;
 	}
+
+	&-title {
+		max-width: 80%;
+	}
 }
 
 .posts-article {
-	width: 95%;
+	width: 90%;
 	margin: 40px 0 0 0;
 
 	&-img{
@@ -563,17 +591,18 @@ body {
 }
 
 .logos {
+	max-width: 100%;
 	flex-wrap: wrap;
 	padding: 20px 0 20px 0;
 
 	&-link {
 		@include flex-center-center;
-		width: 210px;
-		height: 210px;
-		margin: 20px;
+		width: 70%;
+		height: auto;
+		margin: 30px auto;
     
 		&:last-of-type {
-			margin-right: 20px;
+			margin:30px auto;
 	    }
     }
 }
@@ -584,6 +613,7 @@ body {
 }
 
 .main-footer-bottom {
+	max-width: 100%;
 	padding: 20px 0;
 	flex-wrap: wrap;
 	justify-content: center;
