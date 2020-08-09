@@ -509,6 +509,14 @@ body {
 .projects-btn {
 	margin-bottom: 40px;
 }
+
+.project-card-btn{
+    left: 180px;
+	&:nth-of-type(odd) {
+        left: 120px;
+	}
+}
+
 .video-section {
 	display: none;
 }
@@ -584,6 +592,10 @@ body {
 	&-img{
 		width: 100%;
 	}
+}
+
+.posts-article-pagination {
+    left: 112px;
 }
 
 .posts-btn {

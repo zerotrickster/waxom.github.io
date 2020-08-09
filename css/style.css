@@ -2180,6 +2180,11 @@ body {
   .projects-btn {
     margin-bottom: 40px; }
 
+  .project-card-btn {
+    left: 180px; }
+    .project-card-btn:nth-of-type(odd) {
+      left: 120px; }
+
   .video-section {
     display: none; }
 
@@ -2242,6 +2247,9 @@ body {
     margin: 40px 0 0 0; }
     .posts-article-img {
       width: 100%; }
+
+  .posts-article-pagination {
+    left: 112px; }
 
   .posts-btn {
     display: none; }
