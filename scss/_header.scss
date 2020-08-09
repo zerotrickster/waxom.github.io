@@ -55,6 +55,16 @@
 
 }
 
+.mob-menu-label,
+#mob-menu {
+  display: none;
+}
+
+#mob-menu:checked ~ .main-menu-nav {
+  visibility: visible;
+  height: auto;
+}
+
 .main-menu-nav{
 
     @include flex-space-between-center;

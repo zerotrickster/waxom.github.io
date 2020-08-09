@@ -1,12 +1,13 @@
 @import "mixins.scss";
 @import "variables.scss";
 @import "fonts.scss";
-@import "header.scss";
-@import "main.scss";
-@import "footer.scss";
 html,
 body {
 	margin: 0 auto;
 	width: $width;
 }
 
+@import "header.scss";
+@import "main.scss";
+@import "footer.scss";
+@import "media.scss";

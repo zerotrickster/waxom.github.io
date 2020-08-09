@@ -1,0 +1,290 @@
+@media (max-width: 480px){
+html,
+body {
+	max-width: 480px;
+}
+.main-header {
+	@include flex-center;
+	flex-wrap: no-wrap;
+	max-width: 100%;
+	box-sizing: border-box;
+
+      
+      &-top {
+      	max-width: 100%;
+      	height: auto;
+      	padding: 0;
+      	box-sizing: border-box;
+      	justify-content: center;
+      	align-items: flex-start;
+      	margin: 0 auto;
+      }
+}
+
+.main-menu-nav-wrp {
+    display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+
+
+}
+
+.mob-menu-label {
+	display: flex;
+	align-items: center;
+	width: 56px;
+	height: 56px;
+	box-sizing: border-box;
+}
+
+.mob-menu-btn {
+	display: block;
+	width: 100%;
+	height: 6px;
+	background-color: #fff;
+	position: relative;
+
+	&:before,
+	&:after {
+		display: block;
+		content: "";
+		position: absolute;
+	    width: 100%;
+	    height: 6px;
+	    background-color: #fff;
+	}
+
+	&:before {
+		top: -22px;
+	}
+
+	&:after {
+		top: 22px;
+	}
+
+
+}
+
+.mob-menu-label:hover .mob-menu-btn {
+	background-color: $color-main-menu--hover;
+    transition: .3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.mob-menu-label:hover .mob-menu-btn:before,
+.mob-menu-label:hover .mob-menu-btn:after {
+	background-color: $color-main-menu--hover;
+    transition: .3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.main-menu-nav{
+	visibility: hidden;
+	height: 0;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    &-link {
+    text-align: center;
+    margin-right: 0;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 18px;
+   }
+}
+
+.main-menu-nav-btns {
+	display: none;
+}
+
+.main-header-carousel {
+    display: none;
+}
+
+.main-header-carousel-pagination {
+	display: none;
+
+}
+
+.features {
+	@include flex-center-center;
+	flex-wrap: wrap;
+	padding: 40px 0;
+
+	&-wrp{
+		margin:0 0 40px 0;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+	}
+}
+
+.promo {
+	display: none;
+}
+
+.aside {
+	display: none;
+}
+
+.projects {
+	padding: 0;
+
+	&-title {
+		display: block;
+		width: 100%;
+		margin-bottom: 15px;
+		text-align: center;
+		font-family: Raleway;
+        font-size: 30px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #555;
+	}
+
+	&-text {
+		width: 85%;
+		text-align: justify;
+		padding: 0;
+		margin: 0 0 40px 0;
+	}
+
+	&-menu {
+        display: none;	
+	}
+}
+
+.project-card {
+	margin: 0 0 30px 0;
+}
+
+.project-card:nth-child(7),
+.project-card:nth-child(8),
+.project-card:nth-child(9) {
+	margin-bottom: 30px;
+}
+
+.projects-btn {
+	margin-bottom: 40px;
+}
+.video-section {
+	display: none;
+}
+
+.mobile {
+    padding: 40px 0 40px 0;
+	background-position: bottom left 20px;
+	background-size: 50%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	&-title {
+        text-align: center;
+        margin: 0 0 25px 0;
+	}
+
+	&-text {
+        text-align: justify;
+        color: #8c8c8c;
+        margin: 0 0 16px 0;
+        width: 80%;
+	} 
+}
+
+.mobile-list {
+	width: 50%;
+    list-style-type: none;
+    margin: 0 0 0 205px;
+    padding: 0 0 0 30px;
+    min-height: 111px;
+    box-sizing: border-box;
+
+	&-item {
+        font-size: 12px;
+        text-align: justify;
+
+        &:before {
+        	width: 19px;
+            height: 19px;
+            left: -24px;
+            line-height: 19px;
+
+        }
+	}
+}
+
+.counter {
+	display: none;
+}
+.posts {
+	padding: 40px 0 40px 0;
+
+	&-text {
+		width: 80%;
+		padding: 0;
+		margin: 0 0 0 0;
+        text-align: justify;
+	}
+}
+
+.posts-article {
+	margin: 40px 0 0 0;
+}
+
+.posts-btn {
+	display: none;
+}
+
+.logos {
+	flex-wrap: wrap;
+	padding: 20px 0 20px 0;
+
+	&-link {
+		@include flex-center-center;
+		width: 210px;
+		height: 210px;
+		margin: 20px;
+    
+		&:last-of-type {
+			margin-right: 20px;
+	    }
+    }
+}
+
+
+.main-footer-top {
+	display: none;
+}
+
+.main-footer-bottom {
+	padding: 20px 0;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-footer-bottom-links {
+	width: 100%;
+	justify-content: center;
+
+	&:first-child {
+		margin-bottom: 20px;
+	}
+}
+
+}
