@@ -1,1 +1,1 @@
-# waxom.github.io
+https://zerotrickster.github.io/waxom.github.io/
